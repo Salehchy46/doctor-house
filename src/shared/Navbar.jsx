@@ -4,8 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li><NavLink to='/' className={({ isActive }) =>
+            isActive
+                ? "bg-black text-white px-3 py-2 rounded"
+                : "px-3 py-2 rounded hover:border-b-0"}>Home</NavLink></li>
+        <li><NavLink to='/contact' className={({ isActive }) =>
+            isActive
+                ? "bg-black text-white px-3 py-2 rounded"
+                : "px-3 py-2 rounded hover:border-b-0"}>Contact</NavLink></li>
     </>
 
     return (
