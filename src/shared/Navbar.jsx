@@ -12,10 +12,14 @@ const Navbar = () => {
             isActive
                 ? "bg-black text-white px-3 py-2 rounded"
                 : "px-3 py-2 rounded hover:border-b-0"}>Contact</NavLink></li>
+        <li><NavLink to='/login' className={({ isActive }) =>
+            isActive
+                ? "bg-black text-white px-3 py-2 rounded"
+                : "px-3 py-2 rounded hover:border-b-0"}>Login</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,13 +33,10 @@ const Navbar = () => {
                 </div>
                 <img src="./doct.png" className='w-24' alt="" />
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {navLinks}
                 </ul>
-            </div>
-            <div className="navbar-end">
-                <Link to='/login'>Login</Link>
             </div>
         </div>
     );
