@@ -1,14 +1,14 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import image1 from '../../../public/images/img1.jpeg';
-import image2 from '../../../public/images/img2.jpeg';
-import image4 from '../../../public/images/img4.jpeg';
-import image5 from '../../../public/images/img5.jpeg';
+import image1 from '../../assets/images/img1.jpeg';
+import image2 from '../../assets/images/img2.jpeg';
+import image4 from '../../assets/images/img4.jpeg';
+import image5 from '../../assets/images/img5.jpeg';
 
 const Banner = () => {
     return (
-        <Carousel autoPlay>
+        <Carousel autoPlay centerMode infiniteLoop>
             <div
                 className="hero min-h-screen"
                 style={{
@@ -23,7 +23,7 @@ const Banner = () => {
                         <p className="mb-5">
                             Your one-stop destination for reliable, affordable, and certified medical products.
                         </p>
-                        <button className="btn btn-primary">All Services</button>
+                        <button className="btn bg-teal-950 hover:bg-teal-700">All Services</button>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const Banner = () => {
                         <p className="mb-5">
                             Combining cutting-edge technology with compassionate service for better patient outcomes.
                         </p>
-                        <button className="btn btn-primary">All Services</button>
+                        <button className="btn bg-teal-950 hover:bg-teal-700">All Services</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ const Banner = () => {
                         <p className="mb-5">
                             From diagnostic tools to emergency essentials — everything you need for modern healthcare in one place.
                         </p>
-                        <button className="btn btn-primary">All Services</button>
+                        <button className="btn bg-teal-950 hover:bg-teal-700">All Services</button>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ const Banner = () => {
                         <p className="mb-5">
                             Delivering high-quality medical equipment and supplies to keep your patients safe and your practice efficient.
                         </p>
-                        <button className="btn btn-primary">All Services</button>
+                        <button className="btn bg-teal-950 hover:bg-teal-700">All Services</button>
                     </div>
                 </div>
             </div>
