@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ErrorPage = () => {
     return (
@@ -10,6 +11,9 @@ const ErrorPage = () => {
                     "url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/000-http-error-codes.png)",
             }}
         >
+            <Helmet>
+                <title>Doctors' House | Error Page</title>
+            </Helmet>
             <div className="hero-overlay"></div>
             <div className="hero-content text-center">
                 <div className="max-w-md">

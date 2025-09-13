@@ -1,8 +1,12 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 const Login = () => {
     return (
         <div className="hero min-h-screen">
+            <Helmet>
+                <title>Doctors' House | Login</title>
+            </Helmet>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
